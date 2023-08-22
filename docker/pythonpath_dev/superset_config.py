@@ -130,3 +130,7 @@ try:
     )
 except ImportError:
     logger.info("Using default Docker config...")
+
+
+from security import CustomSecurityManager
+CUSTOM_SECURITY_MANAGER = CustomSecurityManager
